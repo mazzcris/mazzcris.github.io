@@ -133,6 +133,10 @@ header {
     display: contents;
 }
 
+#links a img {
+    max-width: 40px;
+}
+
 footer {
     background: #2b6cb0;
     color: #e2e8f0;
@@ -152,7 +156,7 @@ footer {
     }
 }
 
-main{
+main {
     -webkit-transition: background-color 500ms ease-in;
     -moz-transition: background-color 500ms ease-in;
     -o-transition: background-color 500ms ease-in;

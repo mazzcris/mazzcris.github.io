@@ -1,55 +1,88 @@
-<!doctype html>
-<html xml:lang="en" lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <title>Cristiano Mazzarini</title>
-        <meta name="Description" content="Software Engineer">
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-
-    <body>
-        <div id="white_cover"></div>
-            <div id="container" class="span6 offset3">
-                <div id="text">
-                    <span id="name_field">Cristiano Mazzarini</span>
-                    <span id="at_field"></span>
-                </div>
-                <div class="row_two">
-                    <a class="at_hover span2" data-bcolor="3399cc" data-at="LinkedIn" href="http://www.linkedin.com/pub/cristiano-mazzarini/44/14a/620" target="_blank">
-                        <img id="first_img" class="swing" src="icons/linkedin.png" alt="linkedin" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Mazzarini - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="hero">
+        <h1>I'm Cristiano Mazzarini</h1>
+        <p>Tech Lead | Software Architect | Growth Engineer</p>
+        <a href="#projects" class="cta">Explore My Work</a>
+    </div>
+</header>
+<main>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I bring over a decade of experience building high-performance, scalable software. Currently focused on growth
+            engineering, I specialize in creating seamless, efficient applications using PHP, Symfony, and modern
+            front-end technologies.</p>
+    </section>
+    <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-content">
+                    <a href="https://github.com/mazzcris/Sortello" target="_blank">
+                        <h3>Sortello</h3>
+                        <p>A peer-to-peer collaborative voting platform with real-time interaction.</p>
+                        <a href="https://github.com/mazzcris/Sortello" target="_blank">GitHub ↗</a>
                     </a>
-                    <a class="at_hover span2" data-bcolor="d14333" data-at="Google+" href="https://plus.google.com/u/0/107008745443348470166/posts/p/pub" target="_blank">
-                        <img class="swing" src="icons/googleplus.png" alt="google+" >
-                    </a>
-                    <a class="at_hover span2" data-bcolor="ffffff" data-at="Stack Overflow" href="http://stackoverflow.com/users/3052648/mazzcris" target="_blank">
-                        <img class="swing" src="icons/stackoverflow.png" alt="stackoverflow" >
-                    </a>
-                    <a class="at_hover span2" data-bcolor="00aff0" data-at="Skype" href="skype:cristiano.mazzarini?chat" target="_blank">
-                        <img class="swing" src="icons/skype.png" alt="skype" >
-                    </a>
-                    <a class="at_hover span2" data-bcolor="050505" data-at="GitHub" href="https://github.com/mazzcris" target="_blank">
-                        <img class="swing" src="icons/github.png" alt="github" >
-                    </a>
-                    <!--<a class="at_hover span2" data-bcolor="cdcdcd" data-at="Google Play" href="#" target="_blank">
-                        <img class="swing" src="icons/play.png" alt="google_play">
-                    </a>-->
-                    <a class="at_hover span2" data-bcolor="4099FF" data-at="Twitter"href="https://twitter.com/_mazzcris" target="_blank">
-                        <img class="swing" src="icons/twitter.png">
-                    </a>
-                    <a class="at_hover span2" data-bcolor="3b5998" data-at="Facebook" href="https://www.facebook.com/cristiano.mazzarini" target="_blank">
-                        <img class="swing" src="icons/facebook.png" alt="facebook" >
-                    </a>
-                    <!--
-                    <a class="at_hover span2" data-bcolor="7188b6" data-at="by Mail" href="" target="_blank">
-                        <img class="swing" src="icons/email.png" alt="email" >
-                    </a>
-                    -->
                 </div>
             </div>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-
-    <script type="text/javascript" src="script.js"></script>
-    
-    </body>
-
+            <!--            <div class="project-card">-->
+            <!--                <div class="project-content">-->
+            <!--                    <h3>StartSymfony</h3>-->
+            <!--                    <p>A Symfony-based back-office generator for efficient CRUD operations.</p>-->
+            <!--                    <a href="https://github.com/mazzcris/StartSymfony" target="_blank">GitHub ↗</a>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to discussing new opportunities or collaborations. Find me on <a
+                href="https://www.linkedin.com/in/cristiano-mazzarini/" target="_blank">LinkedIn</a> or check out my
+            code on <a href="https://github.com/mazzcris" target="_blank">GitHub</a>.</p>
+    </section>
+    <section id="links" class="section">
+        <a class="at_hover span2" onmouseover="doHover(this)" onmouseout="doMouseOut()" data-bcolor="#3499ccd1"
+           href="http://www.linkedin.com/pub/cristiano-mazzarini/44/14a/620" target="_blank">
+            <img id="first_img" class="swing" src="icons/linkedin.png" alt="linkedin"/>
+        </a>
+        <a class="at_hover span2" onmouseover="doHover(this)" onmouseout="doMouseOut()" data-bcolor="#434141d1"
+           href="https://github.com/mazzcris" target="_blank">
+            <img class="swing" src="icons/github.png" alt="github">
+        </a>
+        <!--<a class="at_hover span2" data-bcolor="cdcdcd" href="#" target="_blank">
+            <img class="swing" src="icons/play.png" alt="google_play">
+        </a>-->
+        <!--
+        <a class="at_hover span2" data-bcolor="7188b6" href="" target="_blank">
+            <img class="swing" src="icons/email.png" alt="email" >
+        </a>
+        -->
+        <a class="at_hover span2" onmouseover="doHover(this)" onmouseout="doMouseOut()" data-bcolor="#05acedcc"
+           href="https://twitter.com/_mazzcris" target="_blank">
+            <img class="swing" src="icons/twitter.png">
+        </a>
+        <a class="at_hover span2" onmouseover="doHover(this)" onmouseout="doMouseOut()" data-bcolor="#f47e28d1"
+           href="http://stackoverflow.com/users/3052648/mazzcris" target="_blank">
+            <img class="swing" src="icons/stackoverflow.png" alt="stackoverflow">
+        </a>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Cristiano Mazzarini</p>
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
 </html>
